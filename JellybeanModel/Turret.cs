@@ -41,7 +41,7 @@ namespace JellybeanModel
             get;
         }
 
-        int ShotAmount
+        int CurrentAmmo
         {
             get;
             set;

@@ -69,6 +69,17 @@ namespace JellybeanModel
         }
         #endregion
 
+        public AbstractEnemy()
+        {
+
+        }
+
+        public AbstractEnemy(float tileProgression, float speed, int maxHealth, int attackDamage, float cooldown, int row, int column) : base(maxHealth, attackDamage, cooldown, row, column)
+        {
+            TileProgression = tileProgression;
+            Speed = speed;
+        }
+
         public void Move()
         {
             tileProgression += speed;

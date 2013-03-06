@@ -23,10 +23,9 @@ namespace JellybeanModel
             get;
         }
 
-        int InUse
+        bool InUse
         {
             get;
-            set;
         }
 
         void ApplyEffect(List<Agent> affectedAgents);

@@ -103,6 +103,11 @@ namespace JellybeanModel
         }
         #endregion
 
+        public Agent()
+        {
+
+        }
+
         public Agent(int maxHealth, int attackDamage, float cooldown, int row, int column)
         {
             state = AgentState.Alive;
