@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JellybeanModel", "JellybeanModel\JellybeanModel.csproj", "{23EC5746-A397-491D-983A-DB80A897FFFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23EC5746-A397-491D-983A-DB80A897FFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23EC5746-A397-491D-983A-DB80A897FFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23EC5746-A397-491D-983A-DB80A897FFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23EC5746-A397-491D-983A-DB80A897FFFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
