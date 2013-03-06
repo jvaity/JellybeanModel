@@ -8,6 +8,12 @@ namespace JellybeanModel
     public interface Enemy
     {
         #region Properties
+        AgentState State
+        {
+            get;
+            set;
+        }
+
         int Row
         {
             get;

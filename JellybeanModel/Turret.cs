@@ -8,6 +8,12 @@ namespace JellybeanModel
     public interface Turret
     {
         #region Properties
+        AgentState State
+        {
+            get;
+            set;
+        }
+
         int Row
         {
             get;
