@@ -7,5 +7,16 @@ namespace JellybeanModel
 {
     public enum EnemyType
     {
+        BasicEnemy,
+        FatGaint,
+        BirdWithArms,
+        FishOnLand,
+        FishWithLegs,
+        NiceEnemy,
+        Moleman,
+        Kitten,
+        Hydra,
+        TimeBomb,
+        SausageDog
     }
 }

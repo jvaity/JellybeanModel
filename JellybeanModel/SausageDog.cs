@@ -7,6 +7,21 @@ namespace JellybeanModel
 {
     public class SausageDog : AbstractEnemy
     {
+        public SausageDog()
+        {
+            maxHealth = 5;
+            State = AgentState.Alive;
+            AttackDamage = 2;
+            speed = 0.5f;
+            TileProgression = 0;
+            Reward = 10;
+
+            Health = maxHealth;
+            Row = 0;
+            Column = 0;
+        }
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -15,16 +30,19 @@ namespace JellybeanModel
         /// <param name="column">Input column of Enemy to Convert</param>
         public SausageDog(int health, int row, int column)
         {
-            Health = health;
-            Row = row;
-            Column = column;
-
+            maxHealth = 5;
             State = AgentState.Alive;
             AttackDamage = 2;
             speed = 0.5f;
             TileProgression = 0;
             Reward = 10;
+
+            Health = health;
+            Row = row;
+            Column = column;
         }
+
+
 
     }
 }
