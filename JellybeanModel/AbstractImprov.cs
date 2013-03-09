@@ -75,7 +75,7 @@ namespace JellybeanModel
             inUse = false;
         }
 
-        public void ApplyEffect(List<Agent> affectedAgents)
+        public virtual void ApplyEffect(List<Agent> affectedAgents)
         {
             if (!inUse)
             {
@@ -83,7 +83,7 @@ namespace JellybeanModel
             }
         }
 
-        public void RemoveEffect()
+        public virtual void RemoveEffect()
         {
             if (inUse)
             {
