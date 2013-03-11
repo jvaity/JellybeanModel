@@ -60,7 +60,7 @@ namespace JellybeanModel
         /// Performs the main action of the Enemy when it reaches its target
         /// </summary>
         /// <param name="target">Target is the Turret that will be Attacked</param>
-        public override void Attack(AbstractTurret target)
+        public void Attack(Agent target)
         {
             if (state != AgentState.Dead)
                 target.Health -= attackDamage;

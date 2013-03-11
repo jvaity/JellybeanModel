@@ -27,7 +27,7 @@ namespace JellybeanModel
             {
                 inUse = true;
 
-                //Checks each agent in the list and replaces it with a sausage dog enemy
+                //Gets each agent in the list and replaces it with a sausage dog enemy
                 for (int i = 0; i < affectedAgents.Count; i++)
                 {
                     Agent tempEnemy = affectedAgents[i];

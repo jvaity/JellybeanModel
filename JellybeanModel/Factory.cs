@@ -5,23 +5,85 @@ using System.Text;
 
 namespace JellybeanModel
 {
-    public static class Factory
+    public class Factory
     {
-        public Factory() {
-            
-        }
-
-        public Agent CreateTurret(TurretType type)
+		private static Factory instance;
+			
+		private Factory() {}
+		
+		/// <summary>
+		/// Gets the instance.
+		/// </summary>
+		/// <value>
+		/// The instance.
+		/// </value>
+		public static Factory Instance
+		{
+			get
+			{
+				if (instance == null)
+					instance = new Factory();
+				
+				return instance;
+			}
+		}
+		
+		/// <summary>
+		/// Creates the turret.
+		/// </summary>
+		/// <returns>
+		/// The turret.
+		/// </returns>
+		/// <param name='type'>
+		/// Turret Type.
+		/// </param>
+        public AbstractTurret CreateTurret(TurretType type)
         {
-            //Add switch statement returning turret depending on TurretType
-            throw new NotImplementedException();
+            //Switch statement returning turret depending on TurretType
+			AbstractTurret temp = new BasicTurret();
+			
+			switch (type)
+			{
+				case TurretType.BasicTurret :
+					temp = new BasicTurret();
+					break;
+//				case TurretType.BoxingGlove :
+//					temp = new BoxingGlove();
+//					break;
+				case TurretType.BurstTurret :
+					temp = new BurstTurret();
+					break;
+//				case TurretType.CopycatTurret :
+//					temp = new CopycatTurret();
+//					break;
+				case TurretType.DepressionTurret :
+					temp = new DepressionTurret();
+					break;
+//				case TurretType.LaserTurret :
+//					temp = new LaserTurret();
+//					break;
+//				case TurretType.RandomTurret :
+//					temp = new RandomTurret();
+//					break;
+//				case TurretType.TurretTurret :
+//					temp = new TurretTurret();
+//					break;
+			}
+			return temp;
         }
-
-        public Agent CreateEnemy(EnemyType type)
+		
+		/// <summary>
+		/// Creates the enemy.
+		/// </summary>
+		/// <returns>
+		/// The enemy.
+		/// </returns>
+		/// <param name='type'>
+		/// Enemy Type.
+		/// </param>
+        public AbstractEnemy CreateEnemy(EnemyType type)
         {
-            //Add switch statement returning enemy depending on EnemyType
-            //throw new NotImplementedException();
-
+            //Switch statement returning enemy depending on EnemyType
             AbstractEnemy temp = new BasicEnemy();
 
             switch (type)
@@ -32,26 +94,33 @@ namespace JellybeanModel
                 case EnemyType.SausageDog:
                     temp = new SausageDog();
                     break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
-                //case EnemyType.BasicEnemy:
-                //    temp = new BasicEnemy();
-                //    break;
+//                case EnemyType.BirdWithArms:
+//                    temp = new BirdWithArms();
+//                    break;
+//                case EnemyType.FatGaint:
+//                    temp = new FatGaint();
+//                    break;
+//                case EnemyType.FishOnLand:
+//                    temp = new FishOnLand();
+//                    break;
+//                case EnemyType.FishWithLegs:
+//                    temp = new FishWithLegs();
+//                    break;
+//                case EnemyType.Hydra:
+//                    temp = new Hydra();
+//					break;
+//                case EnemyType.Kitten:
+//                    temp = new Kitten();
+//                    break;
+//                case EnemyType.Moleman:
+//                    temp = new Moleman();
+//                    break;
+//				case EnemyType.NiceEnemy:
+//                    temp = new NiceEnemy();
+//                    break;
+//				case EnemyType.TimeBomb:
+//                    temp = new TimeBomb();
+//                    break;
             }
 
             return temp;

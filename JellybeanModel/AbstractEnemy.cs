@@ -5,7 +5,7 @@ using System.Text;
 
 namespace JellybeanModel
 {
-    public abstract class AbstractEnemy : Agent, Enemy
+    public abstract class AbstractEnemy : Agent
     {
         protected float tileProgression;
         protected float speed;
@@ -88,7 +88,7 @@ namespace JellybeanModel
         /// <summary>
         /// Performs the main attacking action of the agent.
         /// </summary>
-        public void Attack(List<Agent> potentialTargets)
+        public override void Attack(List<Agent> potentialTargets)
         {
             foreach (Agent t in potentialTargets)
             {

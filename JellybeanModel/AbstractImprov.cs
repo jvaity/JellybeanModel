@@ -5,14 +5,14 @@ using System.Text;
 
 namespace JellybeanModel
 {
-    public abstract class AbstractImprov : Improv
+    public abstract class AbstractImprov
     {
         protected string name, description;
         protected int scoreMultiplier;
         protected bool inUse;
         protected List<Agent> affectedAgents;
 
-        protected enum AgentType { None, All, Turret, Enemy }
+        public enum AgentType { None, All, Turret, Enemy }
         protected AgentType affectedType; 
 
         #region Properties
@@ -83,7 +83,7 @@ namespace JellybeanModel
             }
         }
 
-        public virtual void RemoveEffect()
+        public void RemoveEffect()
         {
             if (inUse)
             {

@@ -54,7 +54,10 @@
     <Compile Include="MutatorType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AbstractTurret.cs" />
+    <Compile Include="SausageDog.cs" />
+    <Compile Include="SausageDogImprov.cs" />
     <Compile Include="Turret.cs" />
+    <Compile Include="Factory.cs" />
     <Compile Include="TurretType.cs" />
   </ItemGroup>
   <ItemGroup>

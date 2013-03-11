@@ -122,10 +122,21 @@ namespace JellybeanModel
         /// <summary>
         /// Performs the main attacking action of the agent.
         /// </summary>
-        public abstract void Attack()
+        public virtual void Attack()
         {
-                      
+        	
         }
+		
+		/// <summary>
+		/// Attack the specified potentialTargets.
+		/// </summary>
+		/// <param name='potentialTargets'>
+		/// Potential targets.
+		/// </param>
+		public virtual void Attack(List<Agent> potentialTargets)
+		{
+			
+		}
 
         /// <summary>
         /// Changes state to AgentState.Dead if the Agent is alive.
@@ -135,5 +146,7 @@ namespace JellybeanModel
             if (state != AgentState.Dead)
                 state = AgentState.Dead;
         }
+		
+		
     }
 }
