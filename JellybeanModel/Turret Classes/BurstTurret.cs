@@ -10,7 +10,8 @@ namespace JellybeanModel
 		public BurstTurret ()
 		{
 			AttackDamage = 0;
-			CurrentAmmo = 1;
+            maximumAmmo = 1;
+            CurrentAmmo = maximumAmmo;
 			State = AgentState.Alive;
 			CooldownTime = 2f;
 			Health = 2;

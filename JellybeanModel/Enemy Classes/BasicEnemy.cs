@@ -28,7 +28,8 @@ namespace JellybeanModel
             AttackDamage = 5;
             Speed = 0.5f;
             TileProgression = 0;
-            Health = 5;
+            maxHealth = 5;
+            Health = maxHealth;
             Reward = 10;
             Row = 0;
             Column = 0;

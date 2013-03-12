@@ -10,7 +10,8 @@ namespace JellybeanModel
 		public BasicTurret () {
 			
 			AttackDamage = 1;
-			CurrentAmmo = 4;
+            maximumAmmo = 4;
+            CurrentAmmo = maximumAmmo;
 			State = AgentState.Alive;
 			CooldownTime = 3f;
 			Health = 2;
@@ -40,9 +41,6 @@ namespace JellybeanModel
 			turretState = TurretState.NotActive;
 		}
 		
-		public override void Attack() {
-			currentAmmo--;
-		}
 		
 	}
 }

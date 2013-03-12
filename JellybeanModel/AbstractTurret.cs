@@ -108,7 +108,7 @@ namespace JellybeanModel
 		}
 		
 		public Bullet Shoot() {
-			
+            CurrentAmmo--;
 			return new Bullet(BulletSpeed, AttackDamage, this);
 		}
     }

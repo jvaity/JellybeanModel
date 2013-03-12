@@ -44,20 +44,29 @@
     <Compile Include="Agent.cs" />
     <Compile Include="AgentState.cs" />
     <Compile Include="AreaOfEffect.cs" />
-    <Compile Include="BasicEnemy.cs" />
     <Compile Include="Bullet.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="AbstractEnemy.cs" />
+    <Compile Include="Enemy Classes\BasicEnemy.cs" />
+    <Compile Include="Enemy Classes\SausageDog.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Enemy Classes\Kitten.cs" />
     <Compile Include="EnemyType.cs" />
+    <Compile Include="Improv Classes\NaturalDisasterImprov.cs" />
+    <Compile Include="Improv Classes\SausageDogImprov.cs" />
+    <Compile Include="Improv Classes\ShuffleImprov.cs" />
+    <Compile Include="Improv Classes\StarkidImprov.cs" />
+    <Compile Include="Improv Classes\ZombieImprov.cs" />
     <Compile Include="Improv.cs" />
     <Compile Include="MutatorType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AbstractTurret.cs" />
-    <Compile Include="SausageDog.cs" />
-    <Compile Include="SausageDogImprov.cs" />
+    <Compile Include="Turret Classes\BasicTurret.cs" />
+    <Compile Include="Turret Classes\BurstTurret.cs" />
+    <Compile Include="Turret Classes\DepressionTurret.cs" />
     <Compile Include="Turret.cs" />
     <Compile Include="Factory.cs" />
+    <Compile Include="TurretState.cs" />
     <Compile Include="TurretType.cs" />
   </ItemGroup>
   <ItemGroup>

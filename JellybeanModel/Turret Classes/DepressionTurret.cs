@@ -10,7 +10,8 @@ namespace JellybeanModel
 		public DepressionTurret ()
 		{
 			AttackDamage = 0;
-			CurrentAmmo = 3;
+            maximumAmmo = 3;
+            CurrentAmmo = maximumAmmo;
 			State = AgentState.Alive;
 			CooldownTime = 5f;
 			Health = 2;
