@@ -30,6 +30,24 @@ namespace JellybeanModel.Improv_Classes
             }
         }
 
+        public void RemoveEffect(List<AbstractEnemy> affectedEnemies)
+        {
+            if (inUse)
+            {
+                foreach (AbstractEnemy e in affectedEnemies)
+                {
+                    if (e.State == AgentState.Sleeping)
+                    {
+                        e.Health += 2;
+                        e.State = AgentState.Alive;
+                    }
+                }
+
+
+                inUse = false;
+            }
+        }
         
+
     }
 }

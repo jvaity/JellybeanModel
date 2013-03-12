@@ -83,7 +83,7 @@ namespace JellybeanModel
             }
         }
 
-        public void RemoveEffect()
+        public virtual void RemoveEffect()
         {
             if (inUse)
             {
