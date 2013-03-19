@@ -9,6 +9,7 @@ namespace JellybeanModel
     {
         protected float tileProgression;
         protected float speed;
+        protected float maxSpeed;
 
         protected int reward;
 
@@ -64,7 +65,18 @@ namespace JellybeanModel
             }
             set
             {
-                speed = value;
+                if (value > maxSpeed)
+                    speed = maxSpeed;
+                else
+                    speed = value;
+            }
+        }
+
+        public float MaxSpeed
+        {
+            get
+            {
+                return maxSpeed;
             }
         }
         #endregion
@@ -77,7 +89,9 @@ namespace JellybeanModel
         public AbstractEnemy(float tileProgression, float speed, int maxHealth, int attackDamage, float cooldown, int row, int column) : base(maxHealth, attackDamage, cooldown, row, column)
         {
             TileProgression = tileProgression;
-            Speed = speed;
+            maxSpeed = speed
+            Speed = maxSpeed;
+
         }
 
         public void Move()
