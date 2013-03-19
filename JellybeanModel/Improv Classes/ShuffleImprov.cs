@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace JellybeanModel.Improv_Classes
+namespace JellybeanModel
 {
     class ShuffleImprov : AbstractImprov
     {
