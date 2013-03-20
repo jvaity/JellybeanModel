@@ -14,7 +14,7 @@ namespace JellybeanModel
             get 
             {
                 GenerateActiveImprovs();
-                return ActiveImprovs; 
+                return activeImprovs; 
             }
         }
 
